@@ -6,7 +6,8 @@
 <title>Pushrod Performance Cycle — Motorcycle Service &amp; Harley‑Davidson Performance, Oshawa</title>
 <meta name="description" content="Independent motorcycle service in Oshawa for Durham Region and the GTA. S&amp;S Pro Tune certified, Master Motorcycle Technician, engine builds, safety inspections, parts. Call 905-576-1666.">
 <link rel="canonical" href="https://www.pushrodperformancecycle.ca/">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='21' fill='none' stroke='%23d29a3a' stroke-width='3'/%3E%3Ccircle cx='24' cy='24' r='5' fill='%23d29a3a'/%3E%3Cpath d='M24 6v13M24 29v13M6 24h13M29 24h13' stroke='%23d29a3a' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" sizes="64x64" href="img/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"MotorcycleRepair","name":"Pushrod Performance Cycle","telephone":"+1-905-576-1666","email":"pushrodperformancecycle@gmail.com","address":{"@type":"PostalAddress","streetAddress":"4-199 Waterloo St","addressLocality":"Oshawa","addressRegion":"ON","postalCode":"L1H 3W9","addressCountry":"CA"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"14:00"}],"areaServed":["Oshawa","Durham Region","Peterborough","Richmond Hill","Greater Toronto Area"],"sameAs":["https://www.facebook.com/PushrodPerformanceCycle","https://www.instagram.com/pushrodperformancecycle/"]}
 </script>
@@ -52,7 +53,12 @@ html[data-theme="dark"] [style*="background: rgb(210, 154, 58)"]{color:#1c1915!i
 html[data-theme="dark"] [style*="background: rgb(28, 25, 21)"][style*="color: rgb(237, 235, 230)"]{background-color:#efeae0!important;color:#1c1915!important}
 html[data-theme="dark"] [style*="solid rgb(168, 161, 150)"]{border-color:#d29a3a!important;color:#d29a3a!important}
 #mobilecall{display:none}
-@media (max-width:860px){#mobilecall{display:block}body{padding-bottom:3.6rem}#navcall{display:none!important}#backtotop{bottom:4.9rem!important}nav[aria-label="Main"]>div{gap:.5rem .8rem!important;padding-block:.5rem!important}nav[aria-label="Main"]>div>a[aria-label]{flex:1 1 auto!important;order:0;max-width:calc(100% - 3.4rem)}nav[aria-label="Main"]>div>button{order:1}nav[aria-label="Main"]>div>ul{order:2;flex-basis:100%;gap:.45rem 1rem!important}}
+#menubtn path{transition:transform .25s ease,opacity .18s ease;transform-box:view-box;transform-origin:12px 12px}
+#menubtn[aria-expanded="true"] .l1{transform:translateY(5px) rotate(45deg)}
+#menubtn[aria-expanded="true"] .l2{opacity:0}
+#menubtn[aria-expanded="true"] .l3{transform:translateY(-5px) rotate(-45deg)}
+@media (prefers-reduced-motion:reduce){#mainmenu,#mainmenu li,#menubtn path{transition:none!important}}
+@media (max-width:860px){#mobilecall{display:block}body{padding-bottom:3.6rem}#navcall{display:none!important}#backtotop{bottom:4.9rem!important}nav[aria-label="Main"]>div{gap:.5rem .8rem!important;padding-block:.5rem!important}nav[aria-label="Main"]>div>a[aria-label]{flex:1 1 auto!important;order:0;max-width:calc(100% - 7.6rem)}nav[aria-label="Main"]>div>button{order:1}#menubtn{display:grid!important}#top{font-size:.85rem!important}#top>div{justify-content:center!important;min-height:2rem!important;padding-block:.3rem!important}#top>div>span:last-child{display:none}nav[aria-label="Main"]>div>a[aria-label]{padding-left:.6rem}#mainmenu{order:2;flex-basis:100%;display:flex!important;flex-direction:column;gap:0!important;position:absolute;left:0;right:0;top:100%;background:#26221e;border-bottom:1px solid #3d3830;box-shadow:0 12px 24px rgba(0,0,0,.35);padding:.3rem 1.25rem .6rem!important;opacity:0;visibility:hidden;transform:translateY(-8px);pointer-events:none;transition:opacity .22s ease,transform .22s ease,visibility 0s linear .22s}#mainmenu[data-open="true"]{opacity:1;visibility:visible;transform:none;pointer-events:auto;transition:opacity .22s ease,transform .22s ease,visibility 0s}#mainmenu li{opacity:0;transform:translateY(-4px);transition:opacity .25s ease,transform .25s ease}#mainmenu[data-open="true"] li{opacity:1;transform:none}#mainmenu[data-open="true"] li:nth-child(2){transition-delay:.03s}#mainmenu[data-open="true"] li:nth-child(3){transition-delay:.06s}#mainmenu[data-open="true"] li:nth-child(4){transition-delay:.09s}#mainmenu[data-open="true"] li:nth-child(5){transition-delay:.12s}#mainmenu[data-open="true"] li:nth-child(6){transition-delay:.15s}#mainmenu[data-open="true"] li:nth-child(7){transition-delay:.18s}#mainmenu li a{display:block;padding:.65rem 0;font-size:1.15rem!important}}
 </style>
 </helmet>
 
@@ -68,7 +74,7 @@ html[data-theme="dark"] [style*="solid rgb(168, 161, 150)"]{border-color:#d29a3a
     <a href="#top" aria-label="Pushrod Performance Cycle home" style="display:flex;align-items:center;gap:.7rem;text-decoration:none;color:#efeae0;flex:1 1 320px;min-width:0">
       <img src="img/logo.png" alt="Pushrod Performance Cycle" style="width:min(100%,640px);height:auto;display:block">
     </a>
-    <ul style="list-style:none;margin:0;padding:0;display:flex;gap:.9rem 1.3rem;flex-wrap:wrap">
+    <ul id="mainmenu" data-open="{{ menuOpen }}" onClick="{{ closeMenu }}" style="list-style:none;margin:0;padding:0;display:flex;gap:.9rem 1.3rem;flex-wrap:wrap">
       <li><a href="#services" style="text-decoration:none;font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.08em;font-weight:600;font-size:1rem;color:#a8a196" style-hover="color:#efeae0">Services</a></li>
       <li><a href="#engines" style="text-decoration:none;font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.08em;font-weight:600;font-size:1rem;color:#a8a196" style-hover="color:#efeae0">Engines</a></li>
       <li><a href="#offseason" style="text-decoration:none;font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.08em;font-weight:600;font-size:1rem;color:#a8a196" style-hover="color:#efeae0">Off‑season</a></li>
@@ -86,6 +92,9 @@ html[data-theme="dark"] [style*="solid rgb(168, 161, 150)"]{border-color:#d29a3a
       <sc-if value="{{ isLight }}" hint-placeholder-val="{{ true }}">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" style="width:1.15rem;height:1.15rem"><path d="M21 13.2A8.6 8.6 0 0 1 10.8 3a8.6 8.6 0 1 0 10.2 10.2z"></path></svg>
       </sc-if>
+    </button>
+    <button type="button" id="menubtn" onClick="{{ toggleMenu }}" aria-controls="mainmenu" aria-expanded="{{ menuOpen }}" aria-label="Menu" title="Menu" style="display:none;place-items:center;width:2.6rem;height:2.6rem;flex:0 0 auto;background:transparent;border:1px solid #3d3830;color:#efeae0;cursor:pointer;padding:0" style-hover="border-color:#a8a196">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="width:1.25rem;height:1.25rem;overflow:visible"><path class="l1" d="M4 7h16"></path><path class="l2" d="M4 12h16"></path><path class="l3" d="M4 17h16"></path></svg>
     </button>
   </div>
 </nav>
@@ -447,7 +456,7 @@ html[data-theme="dark"] [style*="solid rgb(168, 161, 150)"]{border-color:#d29a3a
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;seasonOverride&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Auto&quot;,&quot;Winter&quot;,&quot;Spring&quot;,&quot;Riding&quot;],&quot;default&quot;:&quot;Auto&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Seasonal&quot;},&quot;showSeasonNote&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Seasonal&quot;}}">
 class Component extends DCLogic {
-  state = { galOpen: false, theme: null, showTop: false };
+  state = { galOpen: false, theme: null, showTop: false, menuOpen: false };
   constructor(p){
     super(p);
     this.faqRef = React.createRef();
@@ -590,6 +599,11 @@ class Component extends DCLogic {
       faqRef: this.faqRef,
       themeBtnRef: this.themeBtnRef,
       isDark: this.state.theme === 'dark',
+      isMenuOpen: this.state.menuOpen,
+      isMenuClosed: !this.state.menuOpen,
+      menuOpen: this.state.menuOpen ? 'true' : 'false',
+      toggleMenu: () => this.setState(s => ({ menuOpen: !s.menuOpen })),
+      closeMenu: () => { if (this.state.menuOpen) this.setState({ menuOpen: false }); },
       isLight: this.state.theme !== 'dark',
       topBtnRef: this.topBtnRef,
       topBtnStyle: 'position:fixed;right:1.25rem;bottom:1.25rem;z-index:29;width:2.9rem;height:2.9rem;display:grid;place-items:center;background:#a63d2a;color:#fff;border:0;cursor:pointer;padding:0;transition:opacity .2s ease,background .15s ease;opacity:'
