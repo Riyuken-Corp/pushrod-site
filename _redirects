@@ -1,0 +1,11 @@
+# Old Yellow Pages / Wix URLs -> sections of the new single page (301 = permanent, ! = force even if a file exists)
+/about-us  /#team  301!
+/services  /#services  301!
+/engines  /#engines  301!
+/products  /#parts  301!
+/gallery  /#gallery  301!
+/testimonials  /#reviews  301!
+/contact-us  /#contact  301!
+/home  /  301!
+/privacy-policy  /  301!
+/faq  /#faq  301!
