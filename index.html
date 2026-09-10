@@ -627,5 +627,14 @@ class Component extends DCLogic {
   }
 }
 </script>
+<script>
+// Anchor offset: keep sections from landing under the sticky nav. The sections use
+// scroll-margin-top:var(--nav-offset); measure the real nav height instead of guessing.
+(function(){
+  function set(){var n=document.querySelector('nav[aria-label="Main"]');if(n)document.documentElement.style.setProperty('--nav-offset',n.offsetHeight+'px');}
+  if(window.ResizeObserver)new ResizeObserver(set).observe(document.body);
+  window.addEventListener('resize',set);window.addEventListener('load',set);set();
+})();
+</script>
 </body>
 </html>
